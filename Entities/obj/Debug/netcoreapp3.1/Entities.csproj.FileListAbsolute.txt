@@ -1,0 +1,15 @@
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Entities\bin\Debug\netcoreapp3.1\Entities.deps.json
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Entities\bin\Debug\netcoreapp3.1\Entities.runtimeconfig.json
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Entities\bin\Debug\netcoreapp3.1\Entities.runtimeconfig.dev.json
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Entities\bin\Debug\netcoreapp3.1\Entities.dll
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Entities\bin\Debug\netcoreapp3.1\Entities.pdb
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Entities\bin\Debug\netcoreapp3.1\ShoppingMarket.dll
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Entities\bin\Debug\netcoreapp3.1\ShoppingMarket.pdb
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Entities\obj\Debug\netcoreapp3.1\Entities.csprojAssemblyReference.cache
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.CoreCompileInputs.cache
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfoInputs.cache
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfo.cs
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.CopyComplete
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Entities\obj\Debug\netcoreapp3.1\Entities.dll
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Entities\obj\Debug\netcoreapp3.1\Entities.pdb
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Entities\obj\Debug\netcoreapp3.1\Entities.genruntimeconfig.cache

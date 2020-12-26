@@ -1,0 +1,40 @@
+﻿@model BasketItemViewModel
+<div class="product_list_header">
+        <form action="" method="post" class="last">
+
+            <button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+        </form>
+    </div>
+
+<div id="PPMiniCart">
+    <form method="get" class="" action="#" target="">
+        <button type="button" class="minicart-closer">×</button>
+        <ul>
+            @foreach (var item in Model.BasketItems)
+            {
+                <li class="minicart-item">
+                    <div class="minicart-details-name">
+                        <a class="minicart-name" href="">@item.Product.ProductName</a>
+                    </div>
+                    <div class="minicart-details-quantity">
+                        <input class="minicart-quantity" data-minicart-idx="0" name="quantity_1" type="text" pattern="[0-9]*" value="@item.Quantity" autocomplete="off">
+                    </div>
+                    <div class="minicart-details-remove">
+                        <button type="button" class="minicart-remove" data-minicart-idx="0">×</button>
+                    </div>
+                    <div class="minicart-details-price">
+                        <span class="minicart-price">@item.Price TL</span>
+                    </div>
+
+                </li>
+            }
+        </ul>
+        <div class="minicart-footer">
+            <div class="minicart-subtotal">@Model.BasketItems.Sum(x => x.Price * x.Quantity).ToString() TL</div>
+            <button class="minicart-submit" type="submit" data-minicart-alt="undefined"></button>
+        </div>
+    </form>
+</div>
+
+
+

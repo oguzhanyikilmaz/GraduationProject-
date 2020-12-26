@@ -1,0 +1,86 @@
+﻿@model OrdersViewModel
+@{
+    ViewData["Title"] = "GetOrders";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="checkout">
+    <div class="container">
+        <h2>Siparişleriniz: <span>@Model.Orders.Count.ToString() Adet Sipariş Var</span></h2>
+        @if (Model.Orders.Count == 0)
+        {
+            <div class="row">
+                <div class="col-12">
+                    <div class="alert alert-warning">
+                        Siparişiniz yok.
+                    </div>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="checkout-right">
+                <table class="timetable_sub">
+                    <thead>
+                        <tr>
+                            <th>Sipariş Numarası</th>
+                            <th>Adı</th>
+                            <th>Soyadı</th>
+                            <th>Tarihi</th>
+
+                            <th>Fiyat</th>
+                            <th>Görüntüle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Orders)
+                        {
+                        <tr class="rem1">
+                            <td class="invert">@item.OrderId</td>
+                            <td class="invert">@item.FirstName</td>
+                            <td class="invert">@item.LastName</td>
+                            <td class="invert">@item.OrderDate</td>
+
+                            <td class="invert">@item.TotalAmount</td>
+
+                            <td class="invert">
+                                <form asp-controller="Orders" asp-action="GetOrdersId" method="get">
+                                    <input type="hidden" name="id" value="@item.OrderId">
+                                    <button type="submit" class="btn btn-danger btn-sm">
+                                        Göster
+                                        @*<i class="fa fa-times fa-fw"></i>*@
+                                    </button>
+                                </form>
+                               
+                            </td>
+                        </tr>
+                        }
+
+
+
+                        <!--quantity-->
+                        <script>
+                        $('.value-plus').on('click', function () {
+                            var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10) + 1;
+                            divUpd.text(newVal);
+
+                        });
+
+                        $('.value-minus').on('click', function () {
+                            var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10) - 1;
+                            if (newVal >= 1) divUpd.text(newVal);
+                        });
+                        </script>
+                        <!--quantity-->
+                    </tbody>
+                </table>
+            </div>
+        }
+
+        <!---728x90--->
+        
+    </div>
+</div>
+
+
+
+

@@ -1,0 +1,118 @@
+﻿@model BasketItemViewModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <div class="checkout">
+        <div class="container">
+            <h2>Alışveriş Sepetiniz: <span>@Model.BasketItems.Count.ToString() Adet Ürün Var</span></h2>
+            @if (Model.BasketItems.Count == 0)
+            {
+                <div class="row">
+                    <div class="col-12">
+                        <div class="alert alert-warning">
+                            Sepetinizde ürün yok.
+                        </div>
+                    </div>
+                </div>
+            }
+            else
+            {
+        <div class="checkout-right">
+            <table class="timetable_sub">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Ürün</th>
+                        <th>Adet</th>
+                        <th>Ürün Adı</th>
+
+                        <th>Fiyat</th>
+                        <th>Kaldır</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.BasketItems)
+                    {
+                        <tr class="rem1">
+                            <td class="invert">1</td>
+                            <td class="invert-image"><a href="single.html"><img src="images/1.png" alt=" " class="img-responsive"></a></td>
+                            <td class="invert">
+                                <div class="quantity">
+                                    <div class="quantity-select">
+                                        <div class="entry value-minus">&nbsp;</div>
+                                        <div class="entry value"><span>@item.Quantity</span></div>
+                                        <div class="entry value-plus active">&nbsp;</div>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td class="invert">@item.Product.ProductName</td>
+
+                            <td class="invert">@item.Price</td>
+                            <td class="invert">
+                                <form asp-controller="Baskets" asp-action="DeleteFromBasket" method="post">
+                                    <input type="hidden" name="productId" value="@item.ProductId">
+                                    <button type="submit" class="btn btn-danger btn-sm">
+                                        <i class="fa fa-times fa-fw"></i>
+                                    </button>
+                                </form>
+
+                                <script>
+                                $(document).ready(function (c) {
+                                    $('.close1').on('click', function (c) {
+                                        $('.rem1').fadeOut('slow', function (c) {
+                                            $('.rem1').remove();
+                                        });
+                                    });
+                                });
+                            </script>
+                            </td>
+                        </tr>
+                    }
+
+
+
+                    <!--quantity-->
+                <script>
+                        $('.value-plus').on('click', function () {
+                            var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10) + 1;
+                            divUpd.text(newVal);
+
+                        });
+
+                        $('.value-minus').on('click', function () {
+                            var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10) - 1;
+                            if (newVal >= 1) divUpd.text(newVal);
+                        });
+                </script>
+                    <!--quantity-->
+                </tbody>
+            </table>
+        </div>
+            }
+            
+            <!---728x90--->
+        <div class="checkout-left">
+            <div class="checkout-left-basket">
+                <h4>Sepet</h4>
+                <ul>
+                    @foreach (var item in Model.BasketItems)
+                    {
+                        <li>@item.Product.ProductName <i>-</i> <span>@item.Price TL </span></li>
+                    }
+                    <li>Toplam <i>-</i> <span>@Model.BasketItems.Sum(i => i.Price * i.Quantity)</span></li>
+                </ul>
+            </div>
+            <div class="checkout-right-basket">
+                <a href="@Url.Action("Index", "Home")"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Alışverişe Devam Et</a>
+            </div>
+            <div class="checkout-right-basket">
+                <a href="@Url.Action("CheckOut", "Baskets")"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Alışverişi Bitir</a>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        </div>
+    </div>
+

@@ -1,0 +1,373 @@
+﻿<html>
+<!-- Mirrored from demo.w3layouts.com/demos_new/13-02-2017/super_market-demo_Free/405423547/web/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 27 May 2020 16:21:08 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Shopping Market an Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Anasayfa :: w3layouts</title>
+    <!-- for-mobile-apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Shopping Market Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+               function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- //for-mobile-apps -->
+    <link href="~/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- font-awesome icons -->
+    <link href="~/css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome icons -->
+    <!-- js -->
+    <script src="~/js/jquery-1.11.1.min.js"></script>
+    <!-- //js -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="~/js/move-top.js"></script>
+    <script type="text/javascript" src="~/js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
+        });
+    </script>
+    <!-- start-smoth-scrolling -->
+</head>
+<body>
+    <!-- header -->
+    <div class="agileits_header row">
+        <div class="container">
+            @*<div class="w3l_offers">
+                    <p>SALE UP TO 70% OFF. USE CODE "SALE70%" . <a href="products.html">SHOP NOW</a></p>
+                </div>*@
+            <div class="agile-login">
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <ul>
+                        <li><a href="@Url.Action("LogOff", "Account")">@User.Identity.Name </a></li>
+                        <li><a href="@Url.Action("LogOff", "Account")"> Çıkış Yap </a></li>
+                    </ul>
+                }
+                else
+                {
+                    <ul>
+                        <li><a href="@Url.Action("Register", "Account")"> Hesap Oluştur </a></li>
+                        <li><a href="@Url.Action("LogOn", "Account")">Giriş</a></li>
+
+
+                    </ul>
+                }
+
+
+            </div>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <div class="product_list_header">
+                    <form action="@Url.Action("Index","Baskets")" method="post" class="last">
+
+                        <button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+                <div class="agile-login justify-content-end" style="float:right!important; max-width:45px">
+                    <ul>
+                        <li style="float: right;"><a href="@Url.Action("GetOrders", "Orders")"> Siparişlerim </a></li>
+                    </ul>
+                </div>
+
+            }
+            else
+            {
+                <div class="product_list_header">
+                    <form action="@Url.Action("LogOn","Account")" method="post" class="last">
+
+                        <button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+
+            }
+
+
+
+
+
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+
+    <div class="logo_products">
+        <div class="container">
+            <div class="w3ls_logo_products_left1">
+                <ul class="phone_email">
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>Telefon ile sipariş için arayınız... : (+0123) 234 567</li>
+
+                </ul>
+            </div>
+            <div class="w3ls_logo_products_left">
+                <h1><a href="index.html">Shopping Market</a></h1>
+            </div>
+            <div class="w3l_search">
+                <form action="/Products/GetSearchProduct" method="post">
+                    <input type="search" name="search" placeholder="Ürün Ara..." required="">
+                    <button type="submit" class="btn btn-default search" aria-label="Left Align">
+                        <i class="fa fa-search" aria-hidden="true"> </i>
+                    </button>
+                    <div class="clearfix"></div>
+                </form>
+            </div>
+
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <!-- //header -->
+    <!-- navigation -->
+    <div class="navigation-agileits">
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header nav_2">
+                    <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="/Home/Index" class="act">Anasayfa</a></li>
+                        <!-- Mega Menu -->
+                        <li class="active">
+                            <a href="@Url.Action("ProductListAll", "Home")">Tüm Ürünler</a>
+
+                        </li>
+                        <li class="active">
+                            <a href="@Url.Action("ProductsListCategory", "Home", new { id = 3 })">Temel Gıdalar</a>
+
+                        </li>
+                        <li class="active">
+                            <a href="@Url.Action("ProductsListCategory", "Home", new { id = 1 })">Süt Ve Süt Ürünleri</a>
+
+                        </li>
+                        <li class="active">
+                            <a href="@Url.Action("ProductsListCategory", "Home", new { id = 2 })">Et Ve Et Ürünleri</a>
+
+                        </li>
+                        <li class="active">
+                            <a href="@Url.Action("ProductsListCategory", "Home", new { id = 6 })">Atıştırmalar</a>
+
+                        </li>
+                        <li class="active">
+                            <a href="@Url.Action("ProductsListCategory", "Home", new { id = 7 })">İçecekler</a>
+
+                        </li>
+                        <li class="active">
+                            <a href="@Url.Action("ProductsListCategory", "Home", new { id = 4 })">Kahvaltılık</a>
+
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    @if (TempData["message"] != null)
+    {
+        <partial name="_ResultMessage" model="@(TempData.Get<AlertMessage>("message"))" />
+    }
+
+    <!-- //navigation -->
+    @RenderBody();
+    <!-- //footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="w3_footer_grids">
+                <div class="col-md-3 w3_footer_grid">
+                    <h3>İletişim</h3>
+
+                    <ul class="address">
+                        <li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Bağcılar <span>İstanbul</span></li>
+                        <li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
+                        <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 w3_footer_grid">
+                    <h3>Bilgi</h3>
+                    <ul class="info">
+                        <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="@Url.Action("About", "Home")">Hakkımızda</a></li>
+                        <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="@Url.Action("Contact", "Home")">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 w3_footer_grid">
+                    <h3>Kategoriler</h3>
+                    <ul class="info">
+                        <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="@Url.Action("ProductsListCategory", "Home", new { id = 3 })">Temel Gıdalar</a></li>
+                        <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="@Url.Action("ProductsListCategory", "Home", new { id = 4 })">Kahvaltılık</a></li>
+                        <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="@Url.Action("ProductsListCategory", "Home", new { id = 1 })">Süt Ve Süt Ürünleri</a></li>
+                        <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="@Url.Action("ProductsListCategory", "Home", new { id = 2 })">Et Ve Et Ürünleri</a></li>
+                        <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="@Url.Action("ProductsListCategory", "Home", new { id = 6 })">Atıştırmalık</a></li>
+                        <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="@Url.Action("ProductsListCategory", "Home", new { id = 7 })">İçecekler</a></li>
+
+                    </ul>
+                </div>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <div class="col-md-3 w3_footer_grid">
+                        <h3>Profil</h3>
+                        <ul class="info">
+                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="@Url.Action("Index", "Baskets")">Sepet</a></li>
+                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="@Url.Action("LogOn", "Account")">@User.Identity.Name</a></li>
+                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="@Url.Action("GetOrders", "Orders")">Siparişlerim</a></li>
+                        </ul>
+                    </div>
+                }
+                else
+                {
+                    <div class="col-md-3 w3_footer_grid">
+                        <h3>Profil</h3>
+                        <ul class="info">
+                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="@Url.Action("Register", "Account")">Hesap Oluştur</a></li>
+                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="@Url.Action("LogOn", "Account")">Giriş Yap</a></li>
+                        </ul>
+                    </div>
+                }
+
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+
+        <div class="footer-copy">
+
+            <div class="container">
+                <p>© 2020 Shopping Market </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="~/js/bootstrap.min.js"></script>
+    <!-- top-header and slider -->
+    <!-- here stars scrolling icon -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            /*
+                var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear'
+                };
+            */
+
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+        });
+    </script>
+    <!-- //here ends scrolling icon -->
+    <script src="~/js/minicart.min.js"></script>
+    <script>
+        // Mini Cart
+        paypal.minicart.render({
+            action: '#'
+        });
+
+        if (~window.location.search.indexOf('reset=true')) {
+            paypal.minicart.reset();
+        }
+    </script>
+
+
+    @*<div id="PPMiniCart"><form method="post" class="" action="#" target="">
+            <button type="button" class="minicart-closer">×</button>
+            <ul>
+                @foreach (var item in Model.BasketItems)
+            {
+                <li class="minicart-item">
+                    <div class="minicart-details-name">
+                        <a class="minicart-name" href="">@item.Product.ProductName</a>
+                    </div>
+                    <div class="minicart-details-quantity">
+                        <input class="minicart-quantity" data-minicart-idx="0" name="quantity_1" type="text" pattern="[0-9]*" value="@item.Quantity" autocomplete="off">
+                    </div>
+                    <div class="minicart-details-remove">
+                        <button type="button" class="minicart-remove" data-minicart-idx="0">×</button>
+                    </div>
+                    <div class="minicart-details-price">
+                        <span class="minicart-price">@item.Price TL</span>
+                    </div>
+
+                </li>
+            }
+
+            </ul>
+            <div class="minicart-footer">
+                <div class="minicart-subtotal">Subtotal: $40.00 USD</div>
+                <button class="minicart-submit" type="submit" data-minicart-alt="undefined"></button>
+            </div>
+        </form>
+            </div>*@
+    <!-- main slider-banner -->
+    <script src="~/js/skdslider.min.js"></script>
+    <link href="~/css/skdslider.css" rel="stylesheet">
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            jQuery('#demo1').skdslider({ 'delay': 5000, 'animationSpeed': 2000, 'showNextPrev': true, 'showPlayButton': true, 'autoSlide': true, 'animationType': 'fading' });
+
+            jQuery('#responsive').change(function () {
+                $('#responsive_wrapper').width(jQuery(this).val());
+            });
+
+        });
+    </script>
+
+
+    <script src="~/js/skdslider.min.js"></script>
+    <link href="~/css/skdslider.css" rel="stylesheet">
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            jQuery('#demo1').skdslider({ 'delay': 5000, 'animationSpeed': 2000, 'showNextPrev': true, 'showPlayButton': true, 'autoSlide': true, 'animationType': 'fading' });
+
+            jQuery('#responsive').change(function () {
+                $('#responsive_wrapper').width(jQuery(this).val());
+            });
+
+        });
+    </script>
+    <script src="~/js/bootstrap.min.js"></script>
+
+    <!-- top-header and slider -->
+    <!-- here stars scrolling icon -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            /*
+                var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear'
+                };
+            */
+
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+        });
+    </script>
+    //here ends scrolling icon
+    @*<script src="~/js/minicart.min.js"></script>
+        <script>
+            // Mini Cart
+            paypal.minicart.render({
+                action: '#'
+            });
+
+            if (~window.location.search.indexOf('reset=true')) {
+                paypal.minicart.reset();
+            }
+        </script>*@
+
+</body>
+
+</html>

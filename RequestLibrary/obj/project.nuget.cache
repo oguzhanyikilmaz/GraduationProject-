@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "fAWN1igQD9141fyQFhxo2pxis+mV2gVTTiK99r7PvzeZrECMn4yD/0q5UlPZP/cKeOczqocc5AY3y8i1vX8T+w==",
+  "success": true,
+  "projectFilePath": "D:\\PROJELERİM\\BİTİRMEPROJESİ.NETCORE\\GraduationProject\\RequestLibrary\\RequestLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Acer\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Acer\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

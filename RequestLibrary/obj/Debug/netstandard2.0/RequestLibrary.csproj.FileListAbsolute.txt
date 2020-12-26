@@ -1,0 +1,9 @@
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\RequestLibrary\bin\Debug\netstandard2.0\RequestLibrary.deps.json
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\RequestLibrary\bin\Debug\netstandard2.0\RequestLibrary.dll
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\RequestLibrary\bin\Debug\netstandard2.0\RequestLibrary.pdb
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\RequestLibrary\obj\Debug\netstandard2.0\RequestLibrary.csprojAssemblyReference.cache
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\RequestLibrary\obj\Debug\netstandard2.0\RequestLibrary.csproj.CoreCompileInputs.cache
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\RequestLibrary\obj\Debug\netstandard2.0\RequestLibrary.AssemblyInfoInputs.cache
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\RequestLibrary\obj\Debug\netstandard2.0\RequestLibrary.AssemblyInfo.cs
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\RequestLibrary\obj\Debug\netstandard2.0\RequestLibrary.dll
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\RequestLibrary\obj\Debug\netstandard2.0\RequestLibrary.pdb

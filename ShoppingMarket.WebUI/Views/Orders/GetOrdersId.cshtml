@@ -1,0 +1,112 @@
+﻿@model OrderDetailsViewModel
+@{
+    ViewData["Title"] = "GetOrdersId";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="checkout">
+    <div class="container">
+        <h2>Sipariş Detayları: <span>@Model.OrderDetails.Count.ToString() Adet Ürün Var</span></h2>
+        @if (Model.OrderDetails.Count == 0)
+        {
+            <div class="row">
+                <div class="col-12">
+                    <div class="alert alert-warning">
+                        Siparişte ürün kalmamış.
+                    </div>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="checkout-right">
+                <table class="timetable_sub">
+                    <thead>
+                        <tr>
+                            <th>Sipariş No</th>
+                            <th>Ürün Adı</th>
+                            <th>Adet</th>
+                            
+
+                            <th>Fiyat</th>
+                            <th>Kaldır</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.OrderDetails)
+                        {
+                        <tr class="rem1">
+                            <td class="invert">@item.OrderId</td>
+                            <td class="invert">@item.Product.ProductName</td>
+
+                            <td class="invert">
+                                <div class="quantity">
+                                    <div class="quantity-select">     
+                                        <div class="entry value"><span>@item.Quantity</span></div>     
+                                    </div>
+                                </div>
+                            </td>
+
+                           
+
+                            <td class="invert">@item.Price</td>
+                            <td class="invert">
+                                <form asp-controller="Orders" asp-action="DeleteFromOrderDetails" method="post">
+                                    <input type="hidden" name="orderDetailsId" value="@item.OrderDetailsId">
+                                    <button type="submit" class="btn btn-danger btn-sm">
+                                        <i class="fa fa-times fa-fw"></i>
+                                    </button>
+                                </form>
+
+                                <script>
+                                    $(document).ready(function (c) {
+                                        $('.close1').on('click', function (c) {
+                                            $('.rem1').fadeOut('slow', function (c) {
+                                                $('.rem1').remove();
+                                            });
+                                        });
+                                    });
+                                </script>
+                            </td>
+                        </tr>
+                        }
+
+
+
+                        <!--quantity-->
+                        <script>
+                        $('.value-plus').on('click', function () {
+                            var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10) + 1;
+                            divUpd.text(newVal);
+
+                        });
+
+                        $('.value-minus').on('click', function () {
+                            var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10) - 1;
+                            if (newVal >= 1) divUpd.text(newVal);
+                        });
+                        </script>
+                        <!--quantity-->
+                    </tbody>
+                </table>
+            </div>
+        }
+
+        <!---728x90--->
+        <div class="checkout-left">
+            <div class="checkout-left-basket">
+                <h4>Sepet</h4>
+                <ul>
+                    @foreach (var item in Model.OrderDetails)
+                    {
+                        <li>@item.Product.ProductName <i>-</i> <span>@item.Price TL </span></li>
+                    }
+                    <li>Toplam <i>-</i> <span>@Model.OrderDetails.Sum(i => i.Price * i.Quantity)</span></li>
+                </ul>
+            </div>
+           
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+

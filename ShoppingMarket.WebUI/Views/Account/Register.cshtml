@@ -1,0 +1,48 @@
+﻿@using System.Threading.Tasks
+@model ShoppingMarket.WebUI.Models.RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="breadcrumbs">
+    <div class="container">
+        <ol class="breadcrumb breadcrumb1 animated wow slideInLeft" data-wow-delay=".5s">
+            <li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Anasayfa</a></li>
+            <li class="active">Hesap Oluştur</li>
+        </ol>
+    </div>
+</div>
+
+<div class="register">
+    <div class="container">
+        <h2>Hesap Oluşturun</h2>
+        <div class="login-form-grids">
+            <h5>Profil Bilgileri</h5>
+            <form asp-controller="Account" asp-action="Register" method="post">
+                <input asp-for="FirstName" placeholder="Adınız..." required=" ">
+                <span asp-validation-for="FirstName"></span>
+                <input asp-for="LastName" placeholder="Soyadınız..." required=" ">
+                <span asp-validation-for="LastName"></span>
+                <h6>Giriş Bilgileri</h6>
+                <input asp-for="UserName" placeholder="Kullanıcı Adı" required=" ">
+                <span asp-validation-for="UserName"></span>
+                <input asp-for="Password" placeholder="Şifre" required=" ">
+                <span asp-validation-for="Password"></span>
+                <input asp-for="ConfirmPassword" placeholder="Tekrar Şifre" required=" ">
+                <span asp-validation-for="ConfirmPassword"></span>
+                <input asp-for="Email" placeholder="Email" required=" ">
+                <span asp-validation-for="Email"></span>
+                <div class="register-check-box">
+                    <div class="check">
+                        <label class="checkbox"><input type="checkbox" name="checkbox"><i> </i>Şartları Ve Koşulları Kabul Ediyorum</label>
+                    </div>
+                </div>
+                <input type="submit" value="Kayıt Ol">
+            </form>
+        </div>
+        <div class="register-home">
+            <a href="@Url.Action("Index", "Home")">Anasayfa</a>
+        </div>
+    </div>
+</div>

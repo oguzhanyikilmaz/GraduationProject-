@@ -1,0 +1,16 @@
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Business\bin\Debug\netcoreapp3.1\Business.deps.json
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Business\bin\Debug\netcoreapp3.1\Business.dll
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Business\bin\Debug\netcoreapp3.1\Business.pdb
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Business\bin\Debug\netcoreapp3.1\DataAccess.dll
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Business\bin\Debug\netcoreapp3.1\Entities.dll
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Business\bin\Debug\netcoreapp3.1\ShoppingMarket.dll
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Business\bin\Debug\netcoreapp3.1\DataAccess.pdb
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Business\bin\Debug\netcoreapp3.1\Entities.pdb
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Business\bin\Debug\netcoreapp3.1\ShoppingMarket.pdb
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Business\obj\Debug\netcoreapp3.1\Business.csprojAssemblyReference.cache
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Business\obj\Debug\netcoreapp3.1\Business.csproj.CoreCompileInputs.cache
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfoInputs.cache
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfo.cs
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Business\obj\Debug\netcoreapp3.1\Business.csproj.CopyComplete
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Business\obj\Debug\netcoreapp3.1\Business.dll
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Business\obj\Debug\netcoreapp3.1\Business.pdb

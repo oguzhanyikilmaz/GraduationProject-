@@ -1,0 +1,9 @@
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\ShoppingMarket\bin\Debug\netcoreapp3.1\ShoppingMarket.deps.json
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\ShoppingMarket\bin\Debug\netcoreapp3.1\ShoppingMarket.dll
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\ShoppingMarket\bin\Debug\netcoreapp3.1\ShoppingMarket.pdb
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\ShoppingMarket\obj\Debug\netcoreapp3.1\ShoppingMarket.csproj.CoreCompileInputs.cache
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\ShoppingMarket\obj\Debug\netcoreapp3.1\ShoppingMarket.AssemblyInfoInputs.cache
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\ShoppingMarket\obj\Debug\netcoreapp3.1\ShoppingMarket.AssemblyInfo.cs
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\ShoppingMarket\obj\Debug\netcoreapp3.1\ShoppingMarket.dll
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\ShoppingMarket\obj\Debug\netcoreapp3.1\ShoppingMarket.pdb
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\ShoppingMarket\obj\Debug\netcoreapp3.1\ShoppingMarket.csprojAssemblyReference.cache

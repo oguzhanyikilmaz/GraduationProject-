@@ -1,0 +1,192 @@
+﻿@model ShoppingMarket.WebUI.Models.ProductsViewModel
+<div class="breadcrumbs">
+    <div class="container">
+        <ol class="breadcrumb breadcrumb1 animated wow slideInLeft" data-wow-delay=".5s">
+            <li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Anasayfa</a></li>
+            <li class="active">Ürünler</li>
+        </ol>
+    </div>
+</div>
+<div class="products">
+    <div class="container">
+        <div class="col-md-4 products-left">
+            <div class="categories">
+                <h2>Kategoriler</h2>
+                <ul class="cate">
+                    <li><a href="@Url.Action("ProductListAll", "Home")"><i class="fa fa-arrow-right" aria-hidden="true"></i>Tüm Ürünler</a></li>
+
+                    <li><a href="@Url.Action("ProductsListCategory", "Home", new { id = 3 })"><i class="fa fa-arrow-right" aria-hidden="true"></i>Temel Gıdalar</a></li>
+                    @*@foreach (var item in Model.Products)
+                    {
+                        if (item.CategoryId == 3)
+                        {
+                            <ul>
+                                <li><a href="@Url.Action("GetProduct", "Products", new { id = item.ProductId })"><i class="fa fa-arrow-right" aria-hidden="true"></i>@item.Brand @item.ProductName</a></li>
+
+                            </ul>
+                        }
+
+
+                    }*@
+
+                    <li><a href="@Url.Action("ProductsListCategory", "Home", new { id = 6 })"><i class="fa fa-arrow-right" aria-hidden="true"></i>Atıştırmalık</a></li>
+                    @*@foreach (var item in Model.Products)
+                    {
+                        if (item.CategoryId == 6)
+                        {
+                            <ul>
+                                <li><a href="@Url.Action("GetProduct", "Products", new { id = item.ProductId })"><i class="fa fa-arrow-right" aria-hidden="true"></i>@item.Brand  @item.ProductName</a></li>
+
+                            </ul>
+                        }
+
+
+                    }*@
+
+                    <li><a href="@Url.Action("ProductsListCategory", "Home", new { id = 2 })"><i class="fa fa-arrow-right" aria-hidden="true"></i>Et Ve Et Ürünleri</a></li>
+                    @*@foreach (var item in Model.Products)
+                    {
+                        if (item.CategoryId == 2)
+                        {
+                            <ul>
+                                <li><a href="@Url.Action("GetProduct", "Products", new { id = item.ProductId })"><i class="fa fa-arrow-right" aria-hidden="true"></i>@item.Brand @item.ProductName</a> </li>
+
+                            </ul>
+                        }
+
+
+                    }*@
+
+                    <li><a href="@Url.Action("ProductsListCategory", "Home", new { id = 1 })"><i class="fa fa-arrow-right" aria-hidden="true"></i>Süt Ve Süt Ürünleri</a></li>
+                    @*@foreach (var item in Model.Products)
+                    {
+                        if (item.CategoryId == 1)
+                        {
+                            <ul>
+                                <li><a href="@Url.Action("GetProduct", "Products", new { id = item.ProductId })"><i class="fa fa-arrow-right" aria-hidden="true"></i>@item.Brand @item.ProductName</a> </li>
+
+                            </ul>
+                        }
+
+
+                    }*@
+
+                    <li><a href="@Url.Action("ProductsListCategory", "Home", new { id = 4 })"><i class="fa fa-arrow-right" aria-hidden="true"></i>Kahvaltılık</a></li>
+                    @*@foreach (var item in Model.Products)
+                    {
+                        if (item.CategoryId == 4)
+                        {
+                            <ul>
+                                <li><a href="@Url.Action("GetProduct", "Products", new { id = item.ProductId })"><i class="fa fa-arrow-right" aria-hidden="true"></i>@item.Brand @item.ProductName</a> </li>
+
+                            </ul>
+                        }
+
+
+                    }*@
+                    <li><a href="@Url.Action("ProductsListCategory", "Home", new { id = 7 })"><i class="fa fa-arrow-right" aria-hidden="true"></i>İçecekler</a></li>
+                    @*@foreach (var item in Model.Products)
+                    {
+                        if (item.CategoryId == 7)
+                        {
+                            <ul>
+                                <li><a href="@Url.Action("GetProduct", "Products", new { id = item.ProductId })"><i class="fa fa-arrow-right" aria-hidden="true"></i>@item.ProductName</a> </li>
+
+                            </ul>
+                        }
+
+
+                    }*@
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-8 products-right">
+
+
+            <div class="agile_top_brands_grids">
+                @foreach (var item in Model.Products)
+                {
+
+                    <div class="col-md-4 top_brand_left">
+                        <div class="hover14 column">
+                            <div class="agile_top_brand_left_grid">
+                                <div class="agile_top_brand_left_grid_pos">
+                                    <img src="~/images/offer.png" alt=" " class="img-responsive">
+                                </div>
+                                <div class="agile_top_brand_left_grid1">
+                                    <figure>
+                                        <div class="snipcart-item block">
+                                            <div class="snipcart-thumb">
+                                                <a href="@Url.Action("GetProduct", "Products", new { id = item.ProductId })"><img title=" " alt=" " src="~/images/pf4.png"></a>
+                                                <p>@item.ProductName</p>
+                                                <h4>@item.Price TL</h4>
+                                            </div>
+                                            <div class="snipcart-details top_brand_home_details">
+                                                <form action="" method="get">
+                                                    <fieldset>
+                                                        <input type="hidden" name="cmd" value="_cart">
+                                                        <input type="hidden" name="add" value="1">
+                                                        <input type="hidden" name="business" value=" ">
+                                                        <input type="hidden" name="item_name" value="Fortune Sunflower Oil">
+                                                        <input type="hidden" name="amount" value="35.99">
+                                                        <input type="hidden" name="discount_amount" value="1.00">
+                                                        <input type="hidden" name="currency_code" value="USD">
+                                                        <input type="hidden" name="return" value=" ">
+                                                        <input type="hidden" name="cancel_return" value=" ">
+                                                        <a href="@Url.Action("AddToCart", "Cart", new { productId = item.ProductId })"><input type="submit" name="submit" value="Sepete Ekle" class="button">
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                <div class="clearfix"> </div>
+            </div>
+
+            @*<nav class="numbering">
+                <ul class="pagination paging">*@
+                    @*<li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">«</span>
+                            </a>
+                        </li>*@
+                    @*<li class="active"><a href="#">1<span class="sr-only">(current)</span></a></li>*@
+                    @*@for (int i = 0; i < Model.PageInfo.TotalPages(); i++)
+                    {
+                        @if (Model.PageInfo.CurrentCategory == 0)
+                        {
+                            <li class="page-item @(Model.PageInfo.CurrentPage==i+1?"active":"")">
+                                <a class="page-link" href="/productslistcategory/?page=@(i+1))">
+                                    @(i+1)
+                                </a>
+                            </li>
+
+                        }
+                        else
+                        {
+                            <li class="page-item @(Model.PageInfo.CurrentPage==i+1?"active":"")">
+                                <a class="page-link" href="/productslistcategory/@Model.PageInfo.CurrentCategory?page=@(i+1)">
+                                    @(i+1)
+                                </a>
+                            </li>
+
+                        }
+
+
+                    }*@
+
+                    @*<li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">»</span>
+                            </a>
+                        </li>*@
+                @*</ul>
+            </nav>*@
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>

@@ -1,0 +1,183 @@
+﻿
+@{
+    ViewData["Title"] = "About";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!-- breadcrumbs -->
+<div class="breadcrumbs">
+    <div class="container">
+        <ol class="breadcrumb breadcrumb1 animated wow slideInLeft" data-wow-delay=".5s">
+            <li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Anasayfa</a></li>
+            <li class="active">Hakkımızda</li>
+        </ol>
+    </div>
+</div>
+<!-- //breadcrumbs -->
+<!---728x90--->
+<!-- about -->
+<div class="about">
+    <div class="container">
+        <h3 class="w3_agile_header">Hakkımızda</h3>
+        <div class="about-agileinfo w3layouts">
+            <div class="col-md-8 about-wthree-grids grid-top">
+                <h4>Shopping Market Olarak Karşınızdayız... </h4>
+                <p class="top">
+                    Türkiye’nin 81 ilinde 7215’i aşan mağazamız, 24 dağıtım merkezimiz ve 25.000’e ulaşan çalışanımızla, müşterilerimizin temel ihtiyaç maddelerinin tamamına yakınını “tek yerden” ve evlerine en yakın noktadan karşılamalarını sağlıyoruz.
+                    Mağaza ağımızı, müşterilerimize daha etkili ulaşabilmek amacıyla sürekli ve hızlı bir biçimde genişletiyoruz.
+
+                    2015’in başından bu yana her gün ortalama 3 adet yeni mağaza açarak, 2015 yılında net 699 adet, 2016’da 1.000 adet ve 2017’de 1.100 adet yeni mağaza açtık. Müşterilerimize keyifli bir atmosfer yaratmak ve kolay bir alışveriş deneyimi yaşatmak amacıyla son üç yılda toplam 2.747 adet mağazamızı da yenilemiş bulunmaktayız.
+                </p>
+                <p>
+                    Tüketici hafızasında tarihçesi olan ve geçmişte ulusal marka niteliğine sahip Mis, Piyale, Mintax, Evin ve Amigo gibi markalara sahip çıkarak bu değerleri yeniden ekonomiye kazandırdık. Köklü, nostaljik, marka algısı güçlü ve her biri kendi alanında yüksek bilinirliğe sahip bu özgün markaları, uygun fiyatlara müşterilerimize sunuyoruz.
+
+                    Zengin ürün portföyümüzde özgün markalarımız ile ulusal markaları da bir arada bulundurarak, müşterimize daha çok seçenek sunuyoruz ve müşterilerimizin alışveriş ihtiyacının tamamına yakınını karşılıyoruz. Müşterilerimize uygun fiyatlarla kolayca ulaşabilecekleri yüksek kalitede ürünler sunuyoruz.
+
+                    Sebze meyve alanında ki uzmanlığımız ile temin edilen mahsülleri “dağıtım merkezlerimizden mağazalarımıza” 24 saat içerisinde müşterilerimize en taze biçimde ulaştırıyoruz.
+
+                    Kişisel bakım ve temizlik ürünlerinde Türkiye’nin en önemli perakendecilerinden biriyiz. Müşterilerimize bu alanda geniş bir ürün çeşitliliği sunuyoruz.
+
+                    Farklılaşmış iş modelimiz, “her gün düşük fiyat” politikamız ve farklı formattaki kampanyalarımızla müşterilerimize en iyi hizmeti vermeyi hedefliyoruz.
+                </p>
+                <div class="about-w3agilerow">
+                    <div class="col-md-4 about-w3imgs">
+                        <img src="~/images/p3.jpg" alt="" class="img-responsive zoom-img" />
+                    </div>
+                    <div class="col-md-4 about-w3imgs">
+                        <img src="~/images/p4.jpg" alt="" class="img-responsive zoom-img" />
+                    </div>
+                    <div class="col-md-4 about-w3imgs">
+                        <img src="~/images/p3.jpg" alt="" class="img-responsive zoom-img" />
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+            <div class="col-md-4 about-wthree-grids">
+                <div class="offic-time">
+                    <div class="time-top">
+                        <h4>Shopping Market</h4>
+                    </div>
+                    <div class="time-bottom">
+                        <h5>Evde Kal </h5>
+                        <h5>Koronavirüsle Mücadelede</h5>
+                        <p>En verimli alışverişin adresi, evden alışveriş </p>
+                    </div>
+                </div>
+                <div class="testi">
+                    <h3 class="w3_agile_header">Alışverişte titizlik...</h3>
+                    <!--//End-slider-script -->
+                    <script src="js/responsiveslides.min.js"></script>
+                    <script>
+							// You can also use "$(window).load(function() {"
+							$(function () {
+							  // Slideshow 5
+							  $("#slider5").responsiveSlides({
+								auto: true,
+								pager: false,
+								nav: true,
+								speed: 500,
+								namespace: "callbacks",
+								before: function () {
+								  $('.events').append("<li>before event fired.</li>");
+								},
+								after: function () {
+								  $('.events').append("<li>after event fired.</li>");
+								}
+							  });
+
+							});
+                    </script>
+                    @*<div id="top" class="callbacks_container">
+                        <ul class="rslides" id="slider5">
+                            <li>
+                                <div class="testi-slider">
+                                    <h4>" I AM VERY PLEASED.</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu magna dolor, quisque semper.</p>
+                                    <div class="testi-subscript">
+                                        <p><a href="#">John Doe,</a>Adipiscing</p>
+                                        <span class="w3-agilesub"> </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="testi-slider">
+                                    <h4>" I AM LOREM IPSUM.</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu magna dolor, quisque semper.</p>
+                                    <div class="testi-subscript">
+                                        <p><a href="#">elit semper,</a>Dolor Elit</p>
+                                        <span class="w3-agilesub"> </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="testi-slider">
+                                    <h4>" CONSECTETUR PIMAGNA.</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu magna dolor, quisque semper.</p>
+                                    <div class="testi-subscript">
+                                        <p><a href="#">Amet Doe,</a>Suspendisse</p>
+                                        <span class="w3-agilesub"> </span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>*@
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+<!-- //about -->
+<!---728x90--->
+<!-- about-slid -->
+<div class="about-slid agileits-w3layouts">
+    <div class="container">
+        <div class="about-slid-info">
+            <h2>Alışverişin en iyi adresi...</h2>
+            <p>Biz de sizdeniz,içinizden birileriyiz. Alışverişi en güvenli ve temiz şekilde yapalım.</p>
+        </div>
+    </div>
+</div>
+<!-- //about-slid -->
+<!---728x90--->
+<!-- about-team -->
+<div class="about-team">
+    <div class="container">
+        <h3 class="w3_agile_header">Meet Our Team</h3>
+        <div class="team-agileitsinfo">
+            <div class="col-md-3 about-team-grids">
+                <img src="~/images/t4.jpg" alt="" />
+                <div class="team-w3lstext">
+                    <h4><span>ANDERSON,</span> Manager</h4>
+                    <p>Odio dignissimos vero eos voluptatem accusantium doloremque laudantium reader will be distracted.</p>
+                </div>
+               
+            </div>
+            <div class=" col-md-3 about-team-grids">
+                <img src="~/images/t2.jpg" alt="" />
+                <div class="team-w3lstext">
+                    <h4><span>ELIFS,</span> Director</h4>
+                    <p>Odio dignissimos vero eos voluptatem accusantium doloremque laudantium reader will be distracted.</p>
+                </div>
+               
+            </div>
+            <div class="col-md-3 about-team-grids">
+                <img src="~/images/t1.jpg" alt="" />
+                <div class="team-w3lstext">
+                    <h4><span>JESSICA,</span> Supervisior</h4>
+                    <p>Odio dignissimos vero eos voluptatem accusantium doloremque laudantium reader will be distracted.</p>
+                </div>
+                
+            </div>
+            <div class="col-md-3 about-team-grids">
+                <img src="~/images/t3.jpg" alt="" />
+                <div class="team-w3lstext">
+                    <h4><span>RACKHAM,</span> Staff</h4>
+                    <p>Odio dignissimos vero eos voluptatem accusantium doloremque laudantium reader will be distracted.</p>
+                </div>
+               
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+<!-- //about-team -->

@@ -1,0 +1,9 @@
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Presentation.Admin\bin\Debug\Presentation.Admin.dll
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Presentation.Admin\bin\Debug\Presentation.Admin.pdb
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Presentation.Admin\obj\Debug\Presentation.Admin.csprojAssemblyReference.cache
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Presentation.Admin\obj\Debug\Presentation.Admin.AdminControl.resources
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Presentation.Admin\obj\Debug\Presentation.Admin.ProductForm.resources
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Presentation.Admin\obj\Debug\Presentation.Admin.csproj.GenerateResource.cache
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Presentation.Admin\obj\Debug\Presentation.Admin.csproj.CoreCompileInputs.cache
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Presentation.Admin\obj\Debug\Presentation.Admin.dll
+D:\PROJELERİM\BİTİRMEPROJESİ.NETCORE\GraduationProject\Presentation.Admin\obj\Debug\Presentation.Admin.pdb
